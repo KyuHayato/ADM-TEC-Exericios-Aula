@@ -26,7 +26,7 @@ public class Peixe extends Animal {
 
 	@Override
 	public void alimentar() {
-		// TODO Auto-generated method stub
+		System.out.println("algas");
 		
 	}
 

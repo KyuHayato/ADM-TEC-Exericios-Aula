@@ -20,18 +20,22 @@ public class Ave extends Animal{
 	@Override
 	public void locomover() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("voando");
 	}
 
 	@Override
 	public void alimentar() {
-		// TODO Auto-generated method stub
+		System.out.println("comer minhoca");
 		
+	}
+	public void alimentar(String a) {
+		a = "minhoca turbinada";
+		System.out.println(a);
 	}
 
 	@Override
 	public void emitirSom() {
-		// TODO Auto-generated method stub
+		System.out.println("piaaa!");
 		
 	}
 	

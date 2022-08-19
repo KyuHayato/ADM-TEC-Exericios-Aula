@@ -19,7 +19,7 @@ public class Mamifero extends Animal {
 	@Override
 	public void locomover() {
 		// TODO Auto-generated method stub
-
+		System.out.println("correr");
 	}
 
 	@Override

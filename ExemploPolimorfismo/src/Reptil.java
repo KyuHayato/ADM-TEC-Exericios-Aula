@@ -19,18 +19,18 @@ public class Reptil extends Animal {
 	@Override
 	public void locomover() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("rastejando");
 	}
 
 	@Override
 	public void alimentar() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("inseto");
 	}
 
 	@Override
 	public void emitirSom() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("qui qui");
 	}
 }
