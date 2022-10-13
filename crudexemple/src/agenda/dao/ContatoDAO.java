@@ -49,6 +49,7 @@ public class ContatoDAO {
 		}
 	}
 
+	
 	public List<Contato> listarTodosContatos() {
 		String sql = "SELECT * FROM contatos";
 
@@ -65,7 +66,6 @@ public class ContatoDAO {
 
 			while (rset.next()) {
 				Contato contato = new Contato();
-
 				// Receber o id
 				contato.setId(rset.getInt("id"));
 				// Receber o nome
@@ -101,7 +101,8 @@ public class ContatoDAO {
 
 	public void atualizaContato(Contato contato) {
 
-		String sql = "UPDATE contatos SET nome = ?,idade = ?, datacadastro = ?" + " WHERE id = ?";
+		String sql = "UPDATE contatos SET nome = ?,idade = ?,"
+				+ " datacadastro = ?" + " WHERE id = ?";
 
 		Connection conn = null;
 		PreparedStatement pstm = null;
