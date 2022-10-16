@@ -15,25 +15,25 @@ public class Main {
 		contato.setIdade(20);
 		contato.setDataCadastro(new Date());
 		//salvar nosso contato
-		contatoDAO.criarContato(contato);
+		//contatoDAO.criarContato(contato);
 		
 		//Atualizar nosso contato
-		//Contato c1 = new Contato();
-		//c1.setNome("Jonas Alberto");
-		//c1.setIdade(34);
-		//c1.setDataCadastro(new Date());
-		//c1.setId(1); //ID que esta no banco de dados PK
+		Contato c1 = new Contato();
+		c1.setNome("Cacique");
+		c1.setIdade(50);
+		c1.setDataCadastro(new Date());
+		c1.setId(4); //ID que esta no banco de dados PK
 		//contatoDAO.atualizaContato(c1);
 		
 		//Deleção por ID 
-		//contatoDAO.removerContato(3);
+		contatoDAO.removerContato(4);
 		
 		//Visualização dos registros do banco de dados TODOS
-//		 for (Contato c : contatoDAO.listarTodosContatos()) {
-//			System.out.println("Nome: "+c.getNome());
-//			System.out.println("Nome: "+c.getIdade());
-//		
-//		}
+		 for (Contato c : contatoDAO.listarTodosContatos()) {
+			System.out.println("Nome: "+c.getNome());
+			System.out.println("Idade: "+c.getIdade());
+		
+		}
 		
 	}
 
